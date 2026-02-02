@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     Phone,
@@ -11,7 +11,6 @@ import {
     ThermometerSnowflake,
     Wind,
     ShieldCheck,
-    Wrench,
     Menu,
     X,
     ChevronRight
