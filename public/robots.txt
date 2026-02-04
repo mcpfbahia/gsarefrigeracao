@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://gsaclimatizacao.com.br/sitemap.xml
-Host: https://gsaclimatizacao.com.br
+Sitemap: https://gsarefrigeracao.vercel.app/sitemap.xml
+Host: https://gsarefrigeracao.vercel.app
