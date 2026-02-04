@@ -237,7 +237,7 @@ const Hero = () => {
             <div className="absolute inset-0 z-0">
                 <img
                     src="/og-image.png"
-                    alt="Técnico de Ar Condicionado GSA Climatização"
+                    alt="Técnico de Ar Condicionado em Lauro de Freitas - GSA"
                     className="w-full h-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/70" />
@@ -301,7 +301,7 @@ const About = () => (
             <div className="flex flex-col md:flex-row items-center gap-12">
                 <div className="w-full md:w-1/2 relative">
                     <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
-                        <img src="/og-image.png" alt="Equipe GSA" className="w-full h-auto object-cover" />
+                        <img src="/og-image.png" alt="Equipe Técnica GSA Climatização em Lauro de Freitas" className="w-full h-auto object-cover" />
                     </div>
                     <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-gray-100 rounded-full -z-0 opacity-50" />
                     <div className="absolute -top-6 -left-6 w-24 h-24 bg-blue-100 rounded-full -z-0 opacity-50" />
@@ -313,7 +313,7 @@ const About = () => (
                         </div>
                         <div>
                             <p className="text-xs text-gray-500 font-bold uppercase">Credenciado</p>
-                            <p className="font-bold text-gray-900">CFT e CRT/BA</p>
+                            <p className="font-bold text-gray-900">CRT/BA</p>
                         </div>
                     </div>
                 </div>
@@ -660,13 +660,13 @@ const Footer = () => (
                     </h3>
                     <div className="rounded-xl overflow-hidden h-56 w-full bg-gray-800 shadow-2xl border border-gray-700 relative group">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124505.4764836021!2d-38.3732672!3d-12.8953152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716161455555555%3A0x0!2sLauro%20de%20Freitas%2C%20BA!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr"
+                            src="https://maps.google.com/maps?q=Centro%20Lauro%20de%20Freitas%20Bahia&t=&z=15&ie=UTF8&iwloc=&output=embed"
                             width="100%"
                             height="100%"
                             style={{ border: 0, filter: 'grayscale(100%) contrast(1.1)' }}
                             allowFullScreen
                             loading="lazy"
-                            title="Mapa GSA"
+                            title="Mapa GSA - Centro Lauro de Freitas"
                             className="group-hover:filter-none transition-all duration-700 opacity-80 group-hover:opacity-100"
                         ></iframe>
                     </div>
@@ -683,7 +683,7 @@ const Footer = () => (
                 </div>
             </div>
         </div>
-    </footer>
+    </footer >
 );
 
 const FloatingWhatsApp = () => (
