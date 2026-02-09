@@ -47,12 +47,12 @@ const REVIEWS = [
 const SERVICES = [
     {
         icon: <ThermometerSnowflake className="w-8 h-8 text-primary" />,
-        title: "Residencial (Split Highwall)",
+        title: "Instalação de Ar Condicionado Residencial (Split Highwall)",
         description: "Foco em casas e apartamentos. Instalação de aparelhos pequenos com acabamento premium, evitando gotejamentos e barulho excessivo."
     },
     {
         icon: <Wind className="w-8 h-8 text-primary" />,
-        title: "Comercial (Piso-Teto/Cassete)",
+        title: "Instalação de Ar Condicionado Comercial (Piso-Teto/Cassete)",
         description: "Atendimento a lojas, escritórios e consultórios. Equipamentos de maior potência instalados para garantir conforto térmico eficiente."
     },
     {
@@ -166,13 +166,8 @@ const Header = () => {
                     <img
                         src="/logo.png"
                         alt="GSA Climatização"
-                        className={`object-contain transition-all duration-300 ${isScrolled ? 'h-20' : 'h-32 filter drop-shadow-lg'}`}
+                        className={`object-contain transition-all duration-300 ${isScrolled ? 'h-28' : 'h-40 filter drop-shadow-lg'}`}
                     />
-                    <div className="flex flex-col justify-center text-left">
-                        <span className={`font-bold text-sm md:text-xl tracking-tight leading-tight max-w-[240px] ${isScrolled ? 'text-blue-900' : 'text-white shadow-black drop-shadow-md'}`}>
-                            Refrigeração e Climatização
-                        </span>
-                    </div>
                 </a>
 
                 {/* Desktop Nav */}
@@ -243,13 +238,16 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/70" />
             </div>
 
-            <div className="container mx-auto px-4 relative z-10 text-center md:text-left pt-52 md:pt-44">
+            <div className="container mx-auto px-4 relative z-10 text-center md:text-left pt-40 md:pt-72">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                     className="max-w-3xl"
                 >
+                    <h2 className="text-lg md:text-2xl font-bold text-white mb-4 uppercase tracking-widest drop-shadow-md">
+                        Refrigeração e Climatização
+                    </h2>
                     <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 backdrop-blur-sm rounded-full text-white text-sm font-medium mb-6 border border-white/20">
                         <Star className="w-4 h-4 text-yellow-400 fill-current" />
                         <span>Referência em Lauro de Freitas e Região</span>
