@@ -25,22 +25,22 @@ const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}`;
 const REVIEWS = [
     {
         name: "Raysa Souza",
-        text: "Super recomendo o trabalho da GSA. São profissionais pontuais, cuidadosos e muito educados. Atendimento nota 10!",
+        text: "Super recomendo o trabalho da GSA. Instalaram meu split em Lauro de Freitas super rápido com zero sujeira. Atendimento nota 10!",
         stars: 5,
     },
     {
         name: "Eunice Almeida",
-        text: "Atendimento de excelência. Profissional com muito conhecimento técnico, cuidadoso com o ambiente. Super recomendo.",
+        text: "Atendimento perfeito aqui em Salvador. Profissional com muito conhecimento técnico, cuidadoso com o ambiente. Super recomendo a manutenção preventiva.",
         stars: 5,
     },
     {
         name: "Lucas Rodrigues",
-        text: "Excelente atendimento e serviço de qualidade. Muito satisfeito com a instalação do meu ar condicionado. Porto Seguro agradece o profissionalismo.",
+        text: "Tive uma emergência na minha loja em Camaçari e a GSA me salvou no mesmo dia. PMOC e limpeza impecáveis. Excelente atendimento.",
         stars: 5,
     },
     {
         name: "Carla Santos",
-        text: "Extremamente profissional! Explicou tudo que seria feito e executou de maneira limpa e organizada. Recomendo com certeza!",
+        text: "Extremamente profissional! Explicou tudo que seria feito e executou a instalação do ar condicionado de maneira limpa e organizada.",
         stars: 5,
     }
 ];
@@ -48,57 +48,61 @@ const REVIEWS = [
 const SERVICES = [
     {
         icon: <ThermometerSnowflake className="w-8 h-8 text-primary" />,
-        title: "Instalação de Ar Condicionado Residencial (Split Highwall)",
-        description: "Foco em casas e apartamentos. Instalação de aparelhos pequenos com acabamento premium, evitando gotejamentos e barulho excessivo."
-    },
-    {
-        icon: <Wind className="w-8 h-8 text-primary" />,
-        title: "Instalação de Ar Condicionado Comercial (Piso-Teto/Cassete)",
-        description: "Atendimento a lojas, escritórios e consultórios. Equipamentos de maior potência instalados para garantir conforto térmico eficiente."
+        title: "Instalação de Ar Condicionado",
+        description: "Instalação de ar condicionado em Lauro de Freitas e Salvador. Seguimos as normas das fabricantes para que você não perca a garantia do seu equipamento."
     },
     {
         icon: <ShieldCheck className="w-8 h-8 text-primary" />,
         title: "Manutenção Preventiva e Corretiva",
-        description: "Limpeza profunda com produtos biodegradáveis, verificação de gás e componentes elétricos. Prevenção de quebras e redução no consumo de energia."
+        description: "Manutenção preventiva em Salvador e Lauro. Avaliamos a parte elétrica, corrigimos vazamentos de gás e trocamos peças com agilidade e transparência."
     },
     {
-        icon: <ShieldCheck className="w-8 h-8 text-primary" />,
-        title: "Especialista em Tecnologia Inverter",
-        description: "Foco total na economia de energia e conforto silencioso. Dimensionamento correto para evitar desperdício e garantir durabilidade."
+        icon: <Wind className="w-8 h-8 text-primary" />,
+        title: "Limpeza de Split Profunda",
+        description: "Limpeza de split em Camaçari e Região Metropolitana. Eliminação garantida de bactérias, ácaros e fungos, melhorando o rendimento e a sua saúde."
+    },
+    {
+        icon: <CheckCircle className="w-8 h-8 text-primary" />,
+        title: "Projetos Comerciais e PMOC",
+        description: "Soluções completas e PMOC para empresas, clínicas e galpões comerciais. Evite multas e processos garantindo a pureza do ar em seu estabelecimento."
     }
 ];
 
 const DIFFERENTIALS = [
     {
-        title: "Instalação dentro das normas técnicas",
-        description: "Seguimos rigorosamente os padrões do fabricante e normas técnicas, garantindo segurança, eficiência energética e maior vida útil do equipamento."
+        title: "Técnicos Especializados (NRs)",
+        description: "Investimos em treinamento e certificações. Nada de 'curiosos' mexendo na sua casa ou empresa com risco de choque ou sobrecarga."
     },
     {
-        title: "Qualidade que evita retrabalho",
-        description: "Uma instalação correta desde o início previne vazamentos, perda de rendimento e consumo excessivo de energia."
+        title: "Atendimento de Urgência",
+        description: "Entendemos que ficar no calor é insuportável. Nossa equipe entrega resposta rápida para emergências em Salvador e Região Metropolitana."
     },
     {
-        title: "Atendimento profissional",
-        description: "Avaliação técnica do ambiente, orientação clara ao cliente e entrega do serviço com responsabilidade e compromisso."
+        title: "Zero Sujeira na Instalação",
+        description: "Respeito com o seu ambiente. Cada instalação ou manutenção conta com um acabamento impecável, sem manchar paredes ou deixar entulho."
+    },
+    {
+        title: "Garantia de Serviço",
+        description: "Nós asseguramos a tranquilidade da sua família e negócios. Todo trabalho executado possui documentação clara, nota e garantia técnica real."
     }
 ];
 
 const FAQ_ITEMS = [
     {
-        question: "Quanto custa uma instalação?",
-        answer: "O valor varia de acordo com a capacidade (BTUs), o modelo (Split, Cassete, etc.) e a complexidade do local de instalação. Entre em contato pelo WhatsApp para um orçamento rápido e sem compromisso."
+        question: "Vocês atendem ocorrências de emergência?",
+        answer: "Sim! Trabalhamos com atendimento ágil em Salvador, Lauro de Freitas e Camaçari. Entendemos a urgência e enviamos um técnico qualificado o mais rápido possível. Chame agora no WhatsApp."
     },
     {
-        question: "Realiza higienizações e qual o valor?",
-        answer: "Sim! Realizamos higienização completa com produtos específicos que eliminam fungos e bactérias. O valor depende do modelo e quantidade de aparelhos. Fale conosco para uma cotação."
+        question: "A GSA fornece garantia na instalação?",
+        answer: "Com certeza. Todo nosso serviço vem com garantia técnica registrada. Além disso, efetuamos a instalação seguindo os parâmetros rígidos de cada marca, preservando a garantia original de fábrica do aparelho."
     },
     {
-        question: "Vende máquinas?",
-        answer: "Sim, além da instalação, também auxiliamos na venda dos equipamentos, indicando as melhores marcas e tecnologias (como Inverter) para sua necessidade."
+        question: "Faz higienização profunda ou apenas limpeza de tela?",
+        answer: "Fazemos a limpeza profissional no local com lona de contenção, utilizando bactericidas e ferramentas específicas que limpam a turbina e a serpentina da máquina sem sujar sua parede."
     },
     {
-        question: "Faz reparo em máquinas?",
-        answer: "Com certeza. Somos especialistas em diagnóstico e reparo técnico de defeitos, reposição de gás e peças para ar condicionado residencial e comercial."
+        question: "Atendem empresas com emissão de PMOC?",
+        answer: "Sim, emitimos PMOC para empresas, galerias e indústrias, seguindo a legislação vigente da Anvisa. Garanta que sua empresa não seja multada e ofereça um ambiente saudável aos funcionários."
     }
 ];
 
@@ -239,15 +243,15 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/70" />
             </div>
 
-            <div className="container mx-auto px-4 relative z-10 text-center md:text-left pt-40 md:pt-72">
+            <div className="container mx-auto px-4 relative z-10 text-center md:text-left pt-10 md:pt-16">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                     className="max-w-3xl"
                 >
-                    <h2 className="text-lg md:text-2xl font-bold text-white mb-4 uppercase tracking-widest drop-shadow-md">
-                        Refrigeração e Climatização
+                    <h2 className="text-sm md:text-lg font-bold text-white mb-4 uppercase tracking-widest drop-shadow-md">
+                        Climatização Profissional e Rápida em Salvador, Lauro e Região
                     </h2>
                     <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 backdrop-blur-sm rounded-full text-white text-sm font-medium mb-6 border border-white/20">
                         <Star className="w-4 h-4 text-yellow-400 fill-current" />
@@ -271,7 +275,7 @@ const Hero = () => {
                         >
                             <Button href={WHATSAPP_LINK} target="_blank" className="w-full sm:w-auto text-lg px-8 py-4">
                                 <MessageCircle className="w-5 h-5 mr-2" />
-                                Orçamento via WhatsApp
+                                Agendar Visita Técnica Agora
                             </Button>
                         </motion.div>
                         <Button variant="secondary" href="#servicos" className="w-full sm:w-auto bg-white/10 text-white hover:bg-white/20 backdrop-blur border border-white/30">
@@ -300,7 +304,13 @@ const About = () => (
     <section id="sobre" className="py-20 bg-white">
         <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center gap-12">
-                <div className="w-full md:w-1/2 relative">
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 0.8 }}
+                    className="w-full md:w-1/2 relative"
+                >
                     <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
                         <img src="/og-image.png" alt="Equipe Técnica GSA Climatização em Lauro de Freitas" className="w-full h-auto object-cover" />
                     </div>
@@ -317,21 +327,27 @@ const About = () => (
                             <p className="font-bold text-gray-900">CRT/BA</p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="w-full md:w-1/2">
-                    <SectionHeading subtitle="Sobre Nós" centered={false}>
-                        Experiência que garante o seu <span className="text-primary">conforto</span>
+                <motion.div
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 0.8 }}
+                    className="w-full md:w-1/2"
+                >
+                    <SectionHeading subtitle="Sua Empresa de Climatização na Bahia" centered={false}>
+                        Experiência, expertise e <span className="text-primary">segurança elétrica</span>
                     </SectionHeading>
                     <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                        A <strong>GSA Climatização</strong> não é apenas uma empresa de ar condicionado. Somos especialistas em transformar ambientes através do conforto térmico.
+                        A <strong>GSA Climatização</strong> atende com agilidade toda a Região Metropolitana, fazendo a ponte entre o conforto residencial nos bairros de Salvador e Lauro de Freitas, e a capacidade técnica em indústrias como no Polo de Camaçari.
                     </p>
                     <p className="text-gray-600 mb-6 leading-relaxed">
-                        Atuando em Lauro de Freitas e região metropolitana, nos destacamos pelo rigor técnico. Sou Técnico em Climatização formado pelo SENAI. Nosso compromisso é com a durabilidade do seu equipamento e a saúde da sua família ou equipe.
+                        Profissionais capacitados e formados no SENAI. Nosso compromisso vai muito além de colocar um aparelho na parede; cuidamos da segurança elétrica da sua família ou da sua equipe corporativa e garantimos a máxima vida útil da sua máquina.
                     </p>
                     <ul className="space-y-4 mb-8">
                         {[
-                            "Equipe técnica uniformizada e treinada constantemente.",
+                            "Equipe técnica uniformizada e treinada nas Normas Regulamentadoras (NRs).",
                             "Ferramental de ponta e tecnologia digital.",
                             "Limpeza e organização impecáveis durante o serviço.",
                             "Transparência total no orçamento."
@@ -343,9 +359,9 @@ const About = () => (
                         ))}
                     </ul>
                     <Button href={WHATSAPP_LINK} target="_blank">
-                        Falar com Técnico
+                        Agendar Visita Técnica Agora
                     </Button>
-                </div>
+                </motion.div>
             </div>
         </div>
     </section>
@@ -401,6 +417,10 @@ const Services = () => (
                 {SERVICES.map((service, index) => (
                     <motion.div
                         key={index}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        transition={{ delay: index * 0.15, duration: 0.5 }}
                         whileHover={{ y: -10 }}
                         className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100"
                     >
@@ -442,7 +462,14 @@ const Reviews = () => (
 
             <div className="grid md:grid-cols-2 gap-8">
                 {REVIEWS.map((review, index) => (
-                    <div key={index} className="bg-gray-50 p-8 rounded-2xl relative">
+                    <motion.div
+                        key={index}
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        transition={{ delay: index * 0.1, duration: 0.6 }}
+                        className="bg-gray-50 p-8 rounded-2xl relative"
+                    >
                         <div className="absolute top-8 right-8 text-6xl text-gray-200 font-serif leading-none opacity-50">"</div>
                         <div className="flex items-center gap-1 mb-4 text-yellow-400">
                             {[...Array(review.stars)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
@@ -459,7 +486,7 @@ const Reviews = () => (
                                 <p className="text-xs text-gray-500">Cliente Verificado</p>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </div>
@@ -469,10 +496,16 @@ const Reviews = () => (
 const HowItWorks = () => (
     <section className="py-20 bg-primary text-white overflow-hidden relative">
         <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center mb-16">
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.6 }}
+                className="text-center mb-16"
+            >
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Como contratar a GSA?</h2>
                 <p className="text-blue-200 text-lg">Processo simples, rápido e sem dor de cabeça</p>
-            </div>
+            </motion.div>
 
             <div className="grid md:grid-cols-3 gap-8">
                 {[
@@ -480,7 +513,14 @@ const HowItWorks = () => (
                     { step: "02", title: "Orçamento & Visita", desc: "Passamos uma prévia ou agendamos uma visita técnica para avaliação precisa.", icon: <CheckCircle /> },
                     { step: "03", title: "Execução Perfeita", desc: "Nossa equipe realiza o serviço com limpeza, pontualidade e garantia.", icon: <Star /> }
                 ].map((item, i) => (
-                    <div key={i} className="relative group">
+                    <motion.div
+                        key={i}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        transition={{ delay: i * 0.2, duration: 0.6 }}
+                        className="relative group"
+                    >
                         <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all text-center h-full">
                             <div className="w-16 h-16 bg-white text-primary rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform">
                                 {item.icon}
@@ -496,7 +536,7 @@ const HowItWorks = () => (
                                 <ChevronRight className="w-8 h-8" />
                             </div>
                         )}
-                    </div>
+                    </motion.div>
                 ))}
             </div>
 
