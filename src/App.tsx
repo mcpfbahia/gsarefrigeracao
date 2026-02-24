@@ -172,6 +172,7 @@ const Header = () => {
                         src="/logo.svg"
                         alt="GSA Climatização"
                         className={`object-contain transition-all duration-300 ${isScrolled ? 'h-14' : 'h-20 filter drop-shadow-lg'}`}
+                        fetchPriority="high"
                     />
                 </a>
 
@@ -236,9 +237,10 @@ const Hero = () => {
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="/og-image.png"
+                    src="/og-image.jpg"
                     alt="Técnico de Ar Condicionado em Lauro de Freitas - GSA"
                     className="w-full h-full object-cover object-center"
+                    fetchPriority="high"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/70" />
             </div>
@@ -312,7 +314,7 @@ const About = () => (
                     className="w-full md:w-1/2 relative"
                 >
                     <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
-                        <img src="/og-image.png" alt="Equipe Técnica GSA Climatização em Lauro de Freitas" className="w-full h-auto object-cover" />
+                        <img src="/og-image.jpg" alt="Equipe Técnica GSA Climatização em Lauro de Freitas" className="w-full h-auto object-cover" loading="lazy" />
                     </div>
                     <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-gray-100 rounded-full -z-0 opacity-50" />
                     <div className="absolute -top-6 -left-6 w-24 h-24 bg-blue-100 rounded-full -z-0 opacity-50" />
@@ -613,6 +615,7 @@ const Footer = () => (
                             src="/logo.svg"
                             alt="GSA Climatização"
                             className="h-10 w-auto object-contain brightness-0 invert opacity-90"
+                            loading="lazy"
                         />
                         <span className="text-xs uppercase tracking-widest text-gray-500 font-semibold ml-2">Climatização</span>
                     </div>
