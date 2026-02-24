@@ -394,7 +394,7 @@ const Differentials = () => (
                         transition={{ delay: index * 0.2 }}
                         className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors"
                     >
-                        <div className="w-12 h-12 bg-accent/20 text-accent rounded-lg flex items-center justify-center mb-6 font-bold text-xl">
+                        <div className="w-12 h-12 bg-orange-500 text-primary rounded-lg flex items-center justify-center mb-6 font-bold text-xl">
                             {index + 1}
                         </div>
                         <h3 className="text-xl font-bold text-white mb-4">{item.title}</h3>
