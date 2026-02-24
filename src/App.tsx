@@ -24,23 +24,23 @@ const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 const REVIEWS = [
     {
-        name: "Raysa Souza",
-        text: "Super recomendo o trabalho da GSA. Instalaram meu split em Lauro de Freitas super rápido com zero sujeira. Atendimento nota 10!",
+        name: "Yanna Araujo",
+        text: "Excelente profissional, conhece muito de refrigeração, explica tudo ao cliente trazendo confiança ao serviço prestado. Paciente, cauteloso, muito bom! Super indico.",
         stars: 5,
     },
     {
-        name: "Eunice Almeida",
-        text: "Atendimento perfeito aqui em Salvador. Profissional com muito conhecimento técnico, cuidadoso com o ambiente. Super recomendo a manutenção preventiva.",
+        name: "Moisés Brito",
+        text: "Só tenho elogios a fazer desde visita até a instalação. Profissional muito atencioso e rápido. Utiliza todas as ferramentas de forma correta e leva todo material necessário para instalação. Trabalha com profissionais excelentes e super educados. Com certeza voltaria a fazer negócio!",
         stars: 5,
     },
     {
-        name: "Lucas Rodrigues",
-        text: "Tive uma emergência na minha loja em Camaçari e a GSA me salvou no mesmo dia. PMOC e limpeza impecáveis. Excelente atendimento.",
+        name: "Michele Oliveira",
+        text: "Sr. Gilson é um excelente profissional, conhecedor da área e executado o trabalho com excelência. Recomendo o serviço prestado por ele com alta indicação.",
         stars: 5,
     },
     {
-        name: "Carla Santos",
-        text: "Extremamente profissional! Explicou tudo que seria feito e executou a instalação do ar condicionado de maneira limpa e organizada.",
+        name: "Nara Gonçalves",
+        text: "O serviço prestado pelo Sr. Gilson no conserto e manutenção dos nossos ar condicionados foi excelente. Ele demonstrou grande agilidade, profissionalismo e compromisso, resolvendo os problemas rapidamente e com qualidade. Recomendo fortemente.",
         stars: 5,
     }
 ];
@@ -449,17 +449,22 @@ const Reviews = () => (
 
             {/* Google Badge Placeholder */}
             <div className="flex justify-center mb-12">
-                <div className="inline-flex items-center gap-4 bg-white border border-gray-200 rounded-full px-6 py-3 shadow-sm">
+                <a
+                    href="https://www.google.com/search?q=refrigera%C3%A7%C3%A3o+climatiza%C3%A7%C3%A3o&num=10&sca_esv=efd17c9f923a0167&sxsrf=ANbL-n44eDqsGK3KmW7x2xLgEshYeWZfpw:1771975308439&udm=1&lsack=jDKeac3DGrm35OUPyPPwqAc&sa=X&ved=2ahUKEwjNub22ovOSAxW5G7kGHcg5HHUQjGp6BAgjEAA&biw=1517&bih=665&dpr=0.9&lqi=Ch1yZWZyaWdlcmHDp8OjbyBjbGltYXRpemHDp8Ojb0iukbLslLiAgAhaJRAAEAEYASIdcmVmcmlnZXJhw6fDo28gY2xpbWF0aXphw6fDo296EExhdXJvIGRlIEZyZWl0YXOSAQ9odmFjX2NvbnRyYWN0b3KaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTmtjR0ZxTFZCM0VBRfoBBQjdARAt#rlimm=15402770763527879441"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-4 bg-white border border-gray-200 rounded-full px-6 py-3 shadow-sm hover:shadow-md hover:border-blue-300 transition-all cursor-pointer group"
+                >
                     <div className="flex -space-x-2">
-                        <span className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-xs font-bold text-blue-600">G</span>
+                        <span className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-xs font-bold text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">G</span>
                     </div>
                     <div>
                         <div className="flex text-yellow-400 text-sm">
                             {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
                         </div>
-                        <p className="text-xs text-gray-500 font-medium">4.9/5.0 em 33 avaliações no Google</p>
+                        <p className="text-xs text-gray-500 font-medium group-hover:text-blue-600 transition-colors">4.9/5.0 em 33 avaliações no Google</p>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
