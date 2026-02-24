@@ -13,7 +13,8 @@ import {
     ShieldCheck,
     Menu,
     X,
-    ChevronRight
+    ChevronRight,
+    MessageCircle
 } from 'lucide-react';
 
 // --- Configuration & Data ---
@@ -106,7 +107,7 @@ const FAQ_ITEMS = [
 const Button = ({ children, className = "", href, ...props }: any) => {
     const baseClass = "inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white transition-all duration-300 rounded-full shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 transform hover:-translate-y-1";
     const variants = {
-        primary: "bg-action hover:bg-green-500 focus:ring-green-500",
+        primary: "bg-orange-500 hover:bg-orange-500 focus:ring-orange-500",
         secondary: "bg-primary hover:bg-blue-700 focus:ring-blue-700",
     };
 
@@ -136,7 +137,7 @@ const SectionHeading = ({ children, subtitle, centered = true }: any) => (
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
             {children}
         </h2>
-        <div className={`mt-4 h-1 w-24 bg-action rounded ${centered ? 'mx-auto' : ''}`} />
+        <div className={`mt-4 h-1 w-24 bg-orange-500 rounded ${centered ? 'mx-auto' : ''}`} />
     </div>
 );
 
@@ -164,9 +165,9 @@ const Header = () => {
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <a href="#" className="flex items-center gap-2">
                     <img
-                        src="/logo.png"
+                        src="/logo.svg"
                         alt="GSA Climatização"
-                        className={`object-contain transition-all duration-300 ${isScrolled ? 'h-28' : 'h-40 filter drop-shadow-lg'}`}
+                        className={`object-contain transition-all duration-300 ${isScrolled ? 'h-14' : 'h-20 filter drop-shadow-lg'}`}
                     />
                 </a>
 
@@ -176,7 +177,7 @@ const Header = () => {
                         <a
                             key={link.name}
                             href={link.href}
-                            className={`font-medium hover:text-action transition-colors ${isScrolled ? 'text-gray-700' : 'text-white drop-shadow-md'}`}
+                            className={`font-medium hover:text-orange-500 transition-colors ${isScrolled ? 'text-gray-700' : 'text-white drop-shadow-md'}`}
                         >
                             {link.name}
                         </a>
@@ -227,7 +228,7 @@ const Header = () => {
 
 const Hero = () => {
     return (
-        <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+        <section id="home" className="relative min-h-screen py-32 flex items-center justify-center overflow-hidden">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
                 <img
@@ -250,15 +251,17 @@ const Hero = () => {
                     </h2>
                     <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 backdrop-blur-sm rounded-full text-white text-sm font-medium mb-6 border border-white/20">
                         <Star className="w-4 h-4 text-yellow-400 fill-current" />
-                        <span>Referência em Lauro de Freitas e Região</span>
+                        <span>Referência em Lauro de Freitas e <strong>Região.</strong></span>
                     </div>
 
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-                        Conforto Térmico e <span className="text-action">Economia</span> para seu Ambiente
+                        Especialista em <br />
+                        <span className="text-orange-500">Climatização e Ar</span> <br />
+                        Condicionado
                     </h1>
 
                     <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl">
-                        Climatização com padrão técnico, foco em eficiência energética e durabilidade do equipamento.
+                        Instalação, Manutenção e Limpeza em Lauro de Freitas e Região. Empresa credenciada CRT/BA.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -267,8 +270,8 @@ const Hero = () => {
                             transition={{ repeat: Infinity, duration: 2 }}
                         >
                             <Button href={WHATSAPP_LINK} target="_blank" className="w-full sm:w-auto text-lg px-8 py-4">
-                                <Phone className="w-5 h-5 mr-2" />
-                                Agendar Visita Agora
+                                <MessageCircle className="w-5 h-5 mr-2" />
+                                Orçamento via WhatsApp
                             </Button>
                         </motion.div>
                         <Button variant="secondary" href="#servicos" className="w-full sm:w-auto bg-white/10 text-white hover:bg-white/20 backdrop-blur border border-white/30">
@@ -278,13 +281,13 @@ const Hero = () => {
 
                     <div className="mt-12 flex items-center gap-4 justify-center md:justify-start text-white/80 text-sm">
                         <div className="flex items-center gap-1">
-                            <CheckCircle className="w-4 h-4 text-action" /> Atendimento Rápido
+                            <CheckCircle className="w-4 h-4 text-orange-500" /> Atendimento Rápido
                         </div>
                         <div className="flex items-center gap-1">
-                            <CheckCircle className="w-4 h-4 text-action" /> Garantia Garantida
+                            <CheckCircle className="w-4 h-4 text-orange-500" /> Garantia Garantida
                         </div>
                         <div className="flex items-center gap-1">
-                            <CheckCircle className="w-4 h-4 text-action" /> Técnico Credenciado
+                            <CheckCircle className="w-4 h-4 text-orange-500" /> Técnico Credenciado
                         </div>
                     </div>
                 </motion.div>
@@ -306,7 +309,7 @@ const About = () => (
 
                     {/* Social Proof Badge */}
                     <div className="absolute bottom-8 right-8 bg-white p-4 rounded-xl shadow-lg flex items-center gap-3 z-20 animate-bounce-slow">
-                        <div className="bg-green-100 p-2 rounded-full text-green-600">
+                        <div className="bg-orange-100 p-2 rounded-full text-orange-600">
                             <ShieldCheck className="w-6 h-6" />
                         </div>
                         <div>
@@ -334,7 +337,7 @@ const About = () => (
                             "Transparência total no orçamento."
                         ].map((item, i) => (
                             <li key={i} className="flex items-start gap-3">
-                                <CheckCircle className="w-5 h-5 text-action flex-shrink-0 mt-0.5" />
+                                <CheckCircle className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" />
                                 <span className="text-gray-700">{item}</span>
                             </li>
                         ))}
@@ -360,7 +363,7 @@ const Differentials = () => (
                 <h2 className="text-3xl md:text-4xl font-extrabold text-white leading-tight">
                     Nossos Diferenciais
                 </h2>
-                <div className="mt-4 h-1 w-24 bg-action rounded mx-auto" />
+                <div className="mt-4 h-1 w-24 bg-orange-500 rounded mx-auto" />
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
@@ -482,7 +485,7 @@ const HowItWorks = () => (
                             <div className="w-16 h-16 bg-white text-primary rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform">
                                 {item.icon}
                             </div>
-                            <div className="absolute -top-4 -left-4 w-12 h-12 bg-action rounded-full flex items-center justify-center font-bold text-white shadow-md">
+                            <div className="absolute -top-4 -left-4 w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center font-bold text-white shadow-md">
                                 {item.step}
                             </div>
                             <h3 className="text-xl font-bold mb-4">{item.title}</h3>
@@ -559,30 +562,27 @@ const Footer = () => (
     <footer className="bg-gradient-to-br from-gray-900 via-[#111827] to-[#0B1121] text-gray-300 py-20 relative overflow-hidden font-sans border-t border-white/5">
         {/* Decorative Background Elements */}
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[100px] -translate-y-1/2 pointer-events-none" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-green-500/5 rounded-full blur-[100px] translate-y-1/2 pointer-events-none" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-orange-500/5 rounded-full blur-[100px] translate-y-1/2 pointer-events-none" />
 
         <div className="container mx-auto px-4 relative z-10">
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                 {/* Brand Column */}
                 <div className="lg:col-span-1">
-                    <div className="flex items-center gap-3 mb-6">
+                    <div className="flex flex-col items-start gap-1 mb-6">
                         <img
-                            src="/logo.png"
+                            src="/logo.svg"
                             alt="GSA Climatização"
-                            className="h-12 w-auto object-contain brightness-0 invert opacity-90"
+                            className="h-10 w-auto object-contain brightness-0 invert opacity-90"
                         />
-                        <div className="flex flex-col">
-                            <span className="font-bold text-xl tracking-tight text-white leading-none">GSA</span>
-                            <span className="text-xs uppercase tracking-widest text-gray-500 mt-1 font-semibold">Climatização</span>
-                        </div>
+                        <span className="text-xs uppercase tracking-widest text-gray-500 font-semibold ml-2">Climatização</span>
                     </div>
                     <p className="text-gray-400 text-sm leading-relaxed mb-8 border-l-2 border-primary/30 pl-4">
                         Transformando ambientes com tecnologia e responsabilidade técnica. Seu conforto é nossa prioridade absoluta.
                     </p>
                     <div className="flex gap-4">
                         {[
-                            { icon: <Instagram className="w-5 h-5" />, href: "https://www.instagram.com/gsa_climatizacao?igsh=YnM5N2xsdDMzaWll", color: "hover:bg-pink-600 hover:border-pink-600" },
-                            { icon: <Facebook className="w-5 h-5" />, href: "#", color: "hover:bg-blue-600 hover:border-blue-600" }
+                            { icon: <Instagram className="w-5 h-5" />, href: "https://www.instagram.com/gsa_climatizacao?igsh=YnM5N2xsdDMzaWll", color: "hover:bg-orange-500 hover:border-orange-500" },
+                            { icon: <Facebook className="w-5 h-5" />, href: "#", color: "hover:bg-orange-500 hover:border-orange-500" }
                         ].map((social, idx) => (
                             <a
                                 key={idx}
@@ -599,13 +599,13 @@ const Footer = () => (
                 <div>
                     <h3 className="text-white font-bold text-lg mb-6 flex items-center gap-2">
                         Links Rápidos
-                        <div className="h-1 w-12 bg-action rounded-full ml-2 opacity-50" />
+                        <div className="h-1 w-12 bg-orange-500 rounded-full ml-2 opacity-50" />
                     </h3>
                     <ul className="space-y-3">
                         {['Início', 'Sobre', 'Serviços', 'Depoimentos'].map((item) => (
                             <li key={item}>
                                 <a href={`#${item.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")}`} className="group flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors duration-300">
-                                    <span className="w-1.5 h-1.5 rounded-full bg-gray-600 group-hover:bg-action transition-colors"></span>
+                                    <span className="w-1.5 h-1.5 rounded-full bg-gray-600 group-hover:bg-orange-500 transition-colors"></span>
                                     {item}
                                 </a>
                             </li>
@@ -617,11 +617,11 @@ const Footer = () => (
                 <div>
                     <h3 className="text-white font-bold text-lg mb-6 flex items-center gap-2">
                         Contato
-                        <div className="h-1 w-12 bg-action rounded-full ml-2 opacity-50" />
+                        <div className="h-1 w-12 bg-orange-500 rounded-full ml-2 opacity-50" />
                     </h3>
                     <ul className="space-y-5">
                         <li className="flex items-start gap-4 group">
-                            <div className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-action shrink-0 group-hover:bg-action group-hover:text-white transition-colors duration-300">
+                            <div className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-orange-500 shrink-0 group-hover:bg-orange-500 group-hover:text-white transition-colors duration-300">
                                 <MapPin className="w-5 h-5" />
                             </div>
                             <div>
@@ -630,16 +630,16 @@ const Footer = () => (
                             </div>
                         </li>
                         <li className="flex items-start gap-4 group">
-                            <div className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-action shrink-0 group-hover:bg-action group-hover:text-white transition-colors duration-300">
+                            <div className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-orange-500 shrink-0 group-hover:bg-orange-500 group-hover:text-white transition-colors duration-300">
                                 <Phone className="w-5 h-5" />
                             </div>
                             <div>
                                 <span className="block text-xs font-bold uppercase text-gray-500 mb-1">Telefone</span>
-                                <span className="text-sm text-gray-300 hover:text-action cursor-pointer transition-colors">(71) 99973-0051</span>
+                                <span className="text-sm text-gray-300 hover:text-orange-500 cursor-pointer transition-colors">(71) 99973-0051</span>
                             </div>
                         </li>
                         <li className="flex items-start gap-4 group">
-                            <div className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-action shrink-0 group-hover:bg-action group-hover:text-white transition-colors duration-300">
+                            <div className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center text-orange-500 shrink-0 group-hover:bg-orange-500 group-hover:text-white transition-colors duration-300">
                                 <Clock className="w-5 h-5" />
                             </div>
                             <div>
@@ -654,7 +654,7 @@ const Footer = () => (
                 <div className="lg:col-span-1">
                     <h3 className="text-white font-bold text-lg mb-6 flex items-center gap-2">
                         Localização
-                        <div className="h-1 w-12 bg-action rounded-full ml-2 opacity-50" />
+                        <div className="h-1 w-12 bg-orange-500 rounded-full ml-2 opacity-50" />
                     </h3>
                     <div className="rounded-xl overflow-hidden h-56 w-full bg-gray-800 shadow-2xl border border-gray-700 relative group">
                         <iframe
@@ -701,8 +701,8 @@ const FloatingWhatsApp = () => (
 
 const ThankYou = () => (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center text-center px-4">
-        <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mb-8">
-            <CheckCircle className="w-12 h-12 text-green-600" />
+        <div className="w-24 h-24 bg-orange-100 rounded-full flex items-center justify-center mb-8">
+            <CheckCircle className="w-12 h-12 text-orange-600" />
         </div>
         <h1 className="text-4xl font-bold text-gray-900 mb-4">Obrigado!</h1>
         <p className="text-xl text-gray-600 mb-8 max-w-md">

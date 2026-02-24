@@ -11,7 +11,7 @@ export default {
                 secondary: "#1E3A5F",
                 accent: "#3B82F6",
                 background: "#F8FAFC",
-                action: "#25D366",
+                action: "#F97316",
             },
             fontFamily: {
                 sans: ['Inter', 'sans-serif'],
