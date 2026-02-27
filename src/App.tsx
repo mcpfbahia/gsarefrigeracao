@@ -261,9 +261,11 @@ const Hero = () => {
                     </div>
 
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-                        Especialista em <br />
-                        <span className="text-orange-500">Climatização e Ar</span> <br />
-                        Condicionado
+                        Instalação, manutenção e <br />
+                        <span className="text-orange-500">
+                            infraestrutura em ar <br />
+                            condicionado
+                        </span>
                     </h1>
 
                     <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl">
@@ -339,7 +341,7 @@ const About = () => (
                     className="w-full md:w-1/2"
                 >
                     <SectionHeading subtitle="Sua Empresa de Climatização na Bahia" centered={false}>
-                        Experiência, expertise e <span className="text-primary">segurança elétrica</span>
+                        Experiência e <span className="text-primary">eficácia comprovada</span>
                     </SectionHeading>
                     <p className="text-gray-600 mb-6 text-lg leading-relaxed">
                         A <strong>GSA Climatização</strong> atende com agilidade toda a Região Metropolitana, fazendo a ponte entre o conforto residencial nos bairros de Salvador e Lauro de Freitas, e a capacidade técnica em indústrias como no Polo de Camaçari.
